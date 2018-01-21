@@ -105,6 +105,10 @@ ENV/
 # Local files
 _local/
 
+# Project's environment settings
+.env.json
+!tests/pytests/.env.json
+
 # Assets and Node stuff
 bower_components/
 node_modules/
