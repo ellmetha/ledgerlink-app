@@ -45,6 +45,7 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
+coverage/
 *.cover
 .hypothesis/
 
@@ -114,3 +115,5 @@ bower_components/
 node_modules/
 npm-debug.log
 __snapshots__/
+/ledgerlink/static/build_dev/*
+!ledgerlink/static/build_dev/.gitkeep

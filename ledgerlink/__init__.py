@@ -14,8 +14,7 @@ from flask import Flask
 
 from config import config
 
-from . import extensions
-from . import modules
+from . import extensions, modules
 
 
 def create_app(config_name):
