@@ -11,6 +11,12 @@ name = "pypi"
 isort = "*"
 ipython = "*"
 flask-debugtoolbar = "*"
+flask-shell-ipython = "*"
+pytest = "*"
+pytest-env = "*"
+pytest-cov = "*"
+pytest-sugar = "*"
+pytest-pythonpath = "*"
 
 
 [packages]
