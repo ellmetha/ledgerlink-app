@@ -1,6 +1,6 @@
 """
-    The ``modules`` package
-    =======================
+    The modules package
+    ===================
 
     This package contains the modules of the application. Modules enable logical resource
     separation.

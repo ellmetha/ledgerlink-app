@@ -1,6 +1,6 @@
 """
-    The ``dev`` module
-    ==================
+    The dev module
+    ==============
 
     This module defines context processors and views that are only used during developments.
 
