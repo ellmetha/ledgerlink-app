@@ -16,7 +16,6 @@ env('.env');
 /* Global variables */
 const rootDir = './';
 const staticDir = `${rootDir}ledgerlink/static/`;
-const templatesDir = `${rootDir}ledgerlink/templates/`;
 const PROD_ENV = gutil.env.production;
 const WEBPACK_DEV_SERVER_PORT = (
   process.env.WEBPACK_DEV_SERVER_PORT ? process.env.WEBPACK_DEV_SERVER_PORT : 8080);
@@ -45,19 +44,13 @@ const webpackConfig = {
       { test: /\.js$/, exclude: /node_modules/, use: 'babel-loader' },
       { test: /\.scss$/,
         use: ExtractTextPlugin.extract(
-            { use: ['css-loader', 'sass-loader'], fallback: 'style-loader', publicPath: '../' }) },
+          { use: ['css-loader', 'sass-loader'], fallback: 'style-loader', publicPath: '../' }) },
       { test: /\.txt$/, use: 'raw-loader' },
       { test: /\.(png|jpg|jpeg|gif|svg|woff|woff2)([\?]?.*)$/, use: 'url-loader?limit=10000' },
       { test: /\.(eot|ttf|wav|mp3|otf)([\?]?.*)$/, use: 'file-loader' },
     ],
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
-      Popper: ['popper.js', 'default'],
-    }),
     new ExtractTextPlugin({ filename: 'css/[name].css', disable: false }),
     ...(PROD_ENV ? [
       new webpack.LoaderOptionsPlugin({

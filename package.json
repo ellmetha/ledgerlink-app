@@ -1,11 +1,10 @@
 {
-  "name": "impak-id-service",
+  "name": "ledgerlink-contract",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.11.1"
+    "bootstrap.native": "^2.0.21",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
