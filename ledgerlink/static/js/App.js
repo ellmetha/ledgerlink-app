@@ -2,7 +2,7 @@
 import 'babel-polyfill';
 
 // Forces the evaluation of bootstrap in the global context.
-import 'bootstrap';
+import 'bootstrap.native/dist/bootstrap-native-v4';
 
 import controllers from './controllers';
 import DOMRouter from './core/DOMRouter';
